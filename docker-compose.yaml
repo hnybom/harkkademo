@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  postgres:
+    container_name: postgres
+    restart: always
+    image: postgres:latest
+    ports:
+      - "127.0.0.1:5432:5432"
+    environment:
+      POSTGRES_PASSWORD: salasana
+      POSTGRES_DB: harkka
